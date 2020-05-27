@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Abhishek Jain SBNRI</string>
+
+    <string name="repositories">Repositories</string>
+
+    <string name="license">License</string>
+    <string name="permissions">Permissions </string>
+    <string name="admin">ADMIN</string>
+    <string name="pull">PULL</string>
+    <string name="push">PUSH</string>
+    <string name="open_issues">Open Issues :</string>
+
+    <string name="network_error">Please connect to Network</string>
+    <string name="error_network">Network Error</string>
+    <string name="server_error">Error connecting to Server</string>
+
+</resources>

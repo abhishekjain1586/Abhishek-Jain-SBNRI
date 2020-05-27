@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="octokit.rb"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="octokit.rb octokit.rb octokit.rb ocsldkflsdfddddddddtokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb octokit.rb "
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_license_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/license"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+            <TextView
+                android:id="@+id/tv_license_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_license_title"
+                app:layout_constraintLeft_toRightOf="@+id/tv_license_title"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!--<TextView
+                android:id="@+id/tv_permission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_license_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/permissions"
+                android:textStyle="bold"/>-->
+
+            <TextView
+                android:id="@+id/tv_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_green_dark"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/admin"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_push"
+                app:layout_constraintTop_toBottomOf="@+id/tv_license_title" />
+
+            <TextView
+                android:id="@+id/tv_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/push"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_admin"
+                app:layout_constraintLeft_toRightOf="@+id/tv_admin"
+                app:layout_constraintRight_toLeftOf="@id/tv_pull"/>
+
+            <TextView
+                android:id="@+id/tv_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/pull"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_admin"
+                app:layout_constraintLeft_toRightOf="@+id/tv_push" />
+
+            <TextView
+                android:id="@+id/tv_open_issues_count_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/open_issues"
+                android:layout_marginRight="3dp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/tv_open_issues_count"
+                app:layout_constraintLeft_toRightOf="@+id/tv_pull"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_admin"
+                android:gravity="right"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_open_issues_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="51"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_open_issues_count_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
